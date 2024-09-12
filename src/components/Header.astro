@@ -1,0 +1,189 @@
+---
+import { Image } from "astro:assets";
+import pointerLogo from "@assets/svgs/logoPointerERP.svg";
+---
+
+<!----------------------CAJA PADRE--------------------------------------------------------------------->
+<nav class="lg:flex relative lg:justify-between lg:items-center w-full p-2">
+  <!------------------------------------Menu Mobiles-------------------------------------------------- -->
+
+  <!---
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding: var(--navbar-padding, 0.5rem);
+    min-height: 4rem/* 64px */;
+    width: 100%;
+}
+:where(.navbar > *) {
+    display: inline-flex;
+    align-items: center;
+} -->
+
+  <!--------------------LOGO-------------------------------- -->
+  <div class="flex justify-between items-center">
+    <div class="navbar-logo">
+      <a href="/" class=""
+        ><img
+          src={pointerLogo.src}
+          alt="Pointe ERP logo"
+          class="pointer-logo"
+        /></a
+      >
+    </div>
+    <span class="text-3xl cursor-pointer mx-2 lg:hidden block">
+      <svg
+        name="menu"
+        id="menuButton"
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        ><path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h8m-8 6h16"></path></svg
+      >
+    </span>
+  </div>
+  <!------------------------------------MENU----------------------------------------------------------- -->
+  <ul
+    class="flex flex-col lg:flex-row items-start lg:items-center z-50 lg:z-auto lg:static absolute bg-pointer-text text-white lg:text-black lg:bg-transparent w-full left-0 lg:w-auto lg:py-0 py-4 lg:pl-0 pl-7 lg:opacity-100 opacity-0 top-[-300px] transition-all ease-in duration-500"
+  >
+    <div class="dropdown">
+      <label tabindex="0" class="btn btn-ghost m-1 mx-2">Gestiones</label>
+      <ul
+        tabindex="0"
+        class="dropdown-content z-40 menu p-2 shadow bg-pointer-text text-white rounded-box w-52"
+      >
+        <li>
+          <a href="/gestion/gestiones#Gventas-section">Ventas e inventarios</a>
+        </li>
+        <li>
+          <a href="/gestion/gestiones#Gcompra-section">Compra y Logística</a>
+        </li>
+        <li><a href="/gestion/gestiones#Gtesoreria-section">Tesorería</a></li>
+        <li>
+          <a href="/gestion/gestiones#Gcontabilidad-section">Contabilidad</a>
+        </li>
+        <li>
+          <a href="/gestion/gestiones#Gproduccion-section">Producción</a>
+        </li>
+        <li>
+          <a href="/gestion/gestiones#GrecursosHumanos-section"
+            >Recursos humanos</a
+          >
+        </li>
+        <li><a href="/gestion/gestiones#Gproyectos-section">Proyectos</a></li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <label tabindex="0" class="btn btn-ghost m-1 mx-2">Soluciones</label>
+      <ul
+        tabindex="0"
+        class="dropdown-content z-40 menu p-2 shadow bg-pointer-text text-white rounded-box w-52"
+      >
+        <li>
+          <a href="/solucion/soluciones#emprendedor-section"
+            >Solución Emprendedor</a
+          >
+        </li>
+        <li>
+          <a href="/solucion/soluciones#profesional-section"
+            >Solución Profesional</a
+          >
+        </li>
+        <li>
+          <a href="/solucion/soluciones#corporativo-section"
+            >Solución Corporativo</a
+          >
+        </li>
+      </ul>
+    </div>
+    <a href="/nosotros" class="btn btn-ghost m-1 mx-2">Nosotros</a>
+    <a href="/preguntasFrecuentes" class="btn btn-ghost m-1 mx-2"
+      >Preguntas frecuentes</a
+    >
+
+    <!--------------------------BOTONS---------------------------------- -->
+    <div class="btn-header">
+      <a href="/nosotros/contactenos" class="btn btn-sm lg:btn-md btn-cotiza"
+        >COTIZA</a
+      >
+      <a href="/" class="btn btn-sm lg:btn-md btn-intranet">INTRANET</a>
+    </div>
+  </ul>
+  <script is:inline>
+    document.addEventListener("astro:load", function () {
+      const menuButton = document.getElementById("menuButton");
+      menuButton.addEventListener("click", function () {
+        const list = document.querySelector("ul");
+        if (menuButton.name === "menu") {
+          menuButton.name = "close";
+          //list.classList.add("top-0");
+          list.classList.add("bottom-1");
+          list.classList.add("transform");
+          list.classList.add("translate-y-full");
+          list.classList.add("opacity-100");
+        } else {
+          menuButton.name = "menu";
+          list.classList.remove("top-0");
+          list.classList.remove("bottom-1");
+          list.classList.remove("transform");
+          list.classList.remove("translate-y-full");
+          list.classList.remove("opacity-100");
+        }
+      });
+    });
+  </script>
+</nav>
+<style>
+  /*--------------------navbar padre-------------------------------*/
+  .navbar.padre {
+    display: flex;
+    padding-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /*-------------------------pointer logo-----------------------*/
+  .pointer-logo {
+    /* width: 15vw; */
+    height: 4vw;
+  }
+  /*------------------------------botones-----------------------*/
+  .btn-cotiza {
+    background-color: #fe8d00;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    width: 100px;
+  }
+  .btn-cotiza:hover {
+    background-color: #FC4F00;
+  }
+  .btn-intranet {
+    background-color: #1d6998;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+  }
+  .btn-intranet:hover {
+    background-color: #005796;
+  }
+  .btn-header {
+    display: flex;
+    gap: 15px;
+  }
+  @media(max-width: 900px){
+    .pointer-logo {
+    height: 7vh;
+    }
+  }
+  @media(max-width: 425px){
+    .pointer-logo {
+    height: 5vh;
+    }
+  }
+</style>

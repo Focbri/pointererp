@@ -1,0 +1,142 @@
+---
+import ventasIcon from "@assets/svgs/ICON VENTASVENTAS.svg";
+import comprasIcon from "@assets/svgs/ICON COMPRASBLANCO.svg";
+import tesoreriaIcon from "@assets/svgs/ICON TESORERIABLANCO.svg";
+import contabilidadIcon from "@assets/svgs/ICON CONTABILIDADBLANCO.svg";
+import produccionIcon from "@assets/svgs/ICON PRODUCCIONBLANCO.svg";
+import recursosHumanosIcon from "@assets/svgs/ICON RECURSOSMHBLANCO.svg";
+import gestionDeProyectosIcon from "@assets/svgs/ICON PROYECTOSBLANC.svg";
+const invAlt = "Logo servicio de inventario";
+import ShowIcon from "./ServiceShowIcon.astro";
+const { width } = Astro.props;
+---
+
+<div class="icons-items">
+    <div class="itemsIcon-padre i-1">
+        <div class="ventasIcon">
+            <a href="/gestion/gestiones#Gventas-section"><ShowIcon  src={ventasIcon} width="64px" alt="pendiente" /></a>
+        </div>
+        <h3>Ventas e <br>inventarios</h3>
+    </div>
+    <div class="itemsIcon-padre i-2">
+        <div class="comprasIcon">
+            <a href="/gestion/gestiones#Gcompra-section"><ShowIcon  src={comprasIcon} width="64px" alt="pendiente" /></a>
+        </div>
+        <h3>Compras y <br>logística</h3>
+    </div>
+    <div class="itemsIcon-padre i-3">
+        <div class="tesoreriaIcon">
+            <a href="/gestion/gestiones#Gtesoreria-section"><ShowIcon src={tesoreriaIcon} width="64px" alt="pendiente" /></a>
+        </div>
+        <h3>Tesorería</h3>
+    </div>
+    <div class="itemsIcon-padre i-4">
+        <div class="contabilidadIcon">
+            <a href="/gestion/gestiones#Gcontabilidad-section"><ShowIcon src={contabilidadIcon} width="64px" alt="pendiente" /></a>
+        </div>
+        <h3>Contabilidad</h3>
+    </div>
+    <div class="itemsIcon-padre i-5">
+        <div class="produccionIcon">
+            <a href="/gestion/gestiones#Gproduccion-section"><ShowIcon src={produccionIcon} width="64px" alt="pendiente" /></a>
+        </div>
+        <h3>Producción</h3>
+    </div>
+    <div class="itemsIcon-padre i-6">
+        <div class="recursosIcon">
+            <a href="/gestion/gestiones#GrecursosHumanos-section"><ShowIcon src={recursosHumanosIcon} width="64px" alt="pendiente" /></a>
+        </div>
+        <h3>Recursos<br>humanos</h3>
+    </div>
+    <div class="itemsIcon-padre i-7">
+        <div class="proyectosIcon">
+            <a href="/gestion/gestiones#Gproyectos-section"><ShowIcon src={gestionDeProyectosIcon} width="64px" alt="pendiente" /></a>
+        </div>
+        <h3>Proyectos</h3>
+    </div>
+</div>
+<style>
+  .icons-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 45px;
+  }
+  .icons-items h3 {
+    margin-top: 4px;
+  }
+  .itemsIcon-padre {
+    text-align: center;
+  }
+  .itemsIcon-padre.i-1 {
+    color: #00abe1;
+    font-weight: bold;
+  }
+  .itemsIcon-padre.i-2 {
+    color: #633c8f;
+    font-weight: bold;
+  }
+  .itemsIcon-padre.i-3 {
+    color: #f8aa12;
+    font-weight: bold;
+  }
+  .itemsIcon-padre.i-4 {
+    color: #5baa2d;
+    font-weight: bold;
+  }
+  .itemsIcon-padre.i-5 {
+    color: #005796;
+    font-weight: bold;
+  }
+  .itemsIcon-padre.i-6 {
+    color: #e94290;
+    font-weight: bold;
+  }
+  .itemsIcon-padre.i-7 {
+    color: #fe8d00;
+    font-weight: bold;
+  }
+  .ventasIcon {
+    background-color: #00abe1;
+    border-radius: 50px;
+    padding: 1px;
+    cursor: pointer;
+  }
+  .comprasIcon {
+    background-color: #633c8f;
+    border-radius: 50px;
+    padding: 1px;
+    cursor: pointer;
+  }
+  .tesoreriaIcon {
+    background-color: #f8aa12;
+    border-radius: 50px;
+    padding: 1px;
+    cursor: pointer;
+  }
+  .contabilidadIcon {
+    background-color: #5baa2d;
+    border-radius: 50px;
+    padding: 1px;
+    cursor: pointer;
+  }
+  .produccionIcon {
+    background-color: #005796;
+    border-radius: 50px;
+    padding: 1px;
+    cursor: pointer;
+  }
+  .recursosIcon {
+    background-color: #e94290;
+    border-radius: 50px;
+    padding: 1px;
+    cursor: pointer;
+  }
+  .proyectosIcon {
+    background-color: #fe8d00;
+    border-radius: 50px;
+    padding: 1px;
+    cursor: pointer;
+  }
+</style>

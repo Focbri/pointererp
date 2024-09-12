@@ -1,0 +1,684 @@
+---
+import Layout from "@layouts/Layout.astro";
+import ventainventario from "@assets/images/servicios/ventaseinventarios.png";
+import compralogistica from "@assets/images/servicios/compraylogistica.png";
+import tesoreria from "@assets/images/servicios/tesoreria.png";
+import contabilidad from "@assets/images/servicios/contabilidad.png";
+import produccion from "@assets/images/servicios/produccion.png";
+import recursosHumanos from "@assets/images/servicios/recursoshumanos.png";
+import proyectos from "@assets/images/servicios/proyectos.png";
+import { Image } from "astro:assets";
+import ventasIcon from "@assets/svgs/ICON VENTASVENTAS.svg";
+import comprasIcon from "@assets/svgs/ICON COMPRASBLANCO.svg";
+import tesoreriaIcon from "@assets/svgs/ICON TESORERIABLANCO.svg";
+import contabilidadIcon from "@assets/svgs/ICON CONTABILIDADBLANCO.svg";
+import produccionIcon from "@assets/svgs/ICON PRODUCCIONBLANCO.svg";
+import recursosHumanosIcon from "@assets/svgs/ICON RECURSOSMHBLANCO.svg";
+import gestionDeProyectosIcon from "@assets/svgs/ICON PROYECTOSBLANC.svg";
+---
+
+<Layout
+  title="Pointer ERP"
+  scrollable="scroll-snap-type: y mandatory; overflow-y: scroll; height: 100vh;"
+>
+  <section id="Gventas-section" class="scroll-item">
+    <div class="contenedor-ventas-padre relative z-1">
+      <div class="Gventas-titulo gestion-titulo">
+        <h2 class="text-4x">GESTIÓN DE <span>VENTAS E INVENTARIOS</span></h2>
+      </div>
+      <div class="contenedor-ventas contenedores-general-rsp">
+        <div class="ventas-contenido-G contenido-general-rsp">
+          <ul class="lista-ventas lista-espacio">
+            <li>Bajo costo, sin gastos de licencias.</li>
+            <li>Retorno instantáneo de la inversión.</li>
+            <li>Diseñado específicamente para el mercado de empresa de todo tipo ya nivel.</li>
+            <li>Característica de sistema totalmente integrado.</li>
+            <li>No depende de otros software.</li>
+            <li>Fácil de usar e intuitivo.</li>
+            <li>La toma de decisiones proactiva.</li>
+            <li>Escalable lo que permite que su negocio crezca.</li>
+            <li>Una mayor visibilidad y control de su negocio.</li>
+            <li>Visión en tiempo real de su negocio.</li>
+          </ul>
+        </div>
+        <div class="contenedor-imagesV relative">
+          <img src={ventainventario.src} alt="" class="ventas-image imagenes-rsp" />
+          <div class="iconos-rsp absolute top-8 right-8 bg-c-ventas rounded-full p-4">
+            <Image
+              src={ventasIcon}
+              width={64}
+              alt="Servicio ventas e inventario"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="Gcompra-section" class="scroll-item">
+    <div class="contenedor-compra-padre">
+      <div class="Gcompra-titulo gestion-titulo">
+        <h2>GESTIÓN DE <span> COMPRA Y LOGÍSTICA</span></h2>
+      </div>
+      <div class="contenedor-compra contenedores-general-rsp">
+        <div class="compra-contenido-G contenido-general-rsp">
+          <ul class="lista-compra lista-espacio">
+            <li>Registra todas las requisiciones.</li>
+            <li>Genera requerimientos internos.</li>
+            <li>Genera órdenes de compra de productos<br />o servicios.</li>
+            <li>Permite crear almacenes por sede.</li>
+            <li>Ingresa productos agrupándolos por lista<br /> de precios.</li>
+            <li>Puede hacer traslado de productos entre<br /> sucursales.</li>
+            <li>Permite manejo de atributos del producto.</li>
+            <li>Crea e imprime código de barra.</li>
+            <li>Controla Stock de productos.</li>
+            <li>Permite impresión masiva de códigos.</li>
+            <li>Permite el Registro de las Compras y Registro de Importaciones.</li>
+            <li>Está totalmente integrado con el módulo de Tesoreria y contabilidad.</li>
+          </ul>
+        </div>
+        <div class="contenedor-imagesC relative">
+          <img src={compralogistica.src} alt="" class="compra-image imagenes-rsp" />
+          <div class="iconos-rsp absolute top-8 right-8 bg-c-compras rounded-full p-4">
+            <Image
+              src={comprasIcon}
+              width={64}
+              alt="Servicio ventas e inventario"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="Gtesoreria-section" class="scroll-item">
+    <div class="contenedor-tesoreria-padre">
+      <div class="Gtesoreria-titulo gestion-titulo">
+        <h2>GESTIÓN DE <span>TESORERIA</span></h2>
+      </div>
+      <div class="contenedor-tesoreria contenedores-general-rsp">
+        <div class="tesoreria-contenido-G contenido-general-rsp">
+          <ul class="lista-tesoreria lista-espacio">
+            <li>Controla todo el flujo de Cuentas por Cobrar y Cuentas por Pagar.</li>
+            <li>Permite realizar cobros a través de cajas y bancos.</li>
+            <li>Permite el realizar múltiples programaciones de pagos.</li>
+            <li>Permite realizar canje con letras o documentos de cuentas por pagar.</li>
+            <li>Crea todas las cajas y bancos necesarios con sus monedas.</li>
+            <li>Manejo de Letras de cambios, notas de abono y de cargo.</li>
+            <li>Permite impresiones de documentos como cheques, vouchers.</li>
+            <li>Permite gestionar los distintos conceptos tributarios.</li>
+            <li>Podrá realizar las conciliciones de las diferentes cuentas corrientes.</li>
+            <li>Este módulo está integrado con el área de cuentas por cobrar y pagar.</li>
+          </ul>
+        </div>
+        <div class="contenedor-imagesT relative">
+          <img src={tesoreria.src} alt="" class="tesoreria-image imagenes-rsp" />
+          <div class="iconos-rsp absolute top-8 right-8 bg-c-tesoreria rounded-full p-4">
+            <Image
+              src={tesoreriaIcon}
+              width={64}
+              alt="Servicio ventas e inventario"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="Gcontabilidad-section" class="scroll-item">
+    <div class="contenedor-contabilidad-padre">
+      <div class="Gcontabilidad-titulo gestion-titulo">
+        <h2>GESTIÓN DE <span>CONTABILIDAD</span></h2>
+      </div>
+      <div class="contenedor-contabilidad contenedores-general-rsp">
+        <div class="contabilidad-contenido-G contenido-general-rsp">
+          <ul class="lista-contabilidad lista-espacio">
+            <li>Permite realizar consultas gerenciales a diferentes niveles.</li>
+            <li>Opciones multiempresa.</li>
+            <li>Módulo multimoneda.</li>
+            <li>Garantiza la integridad de la información.</li>
+            <li>Configuración personalizada por el usuario de los principales EEFF.</li>
+            <li>Emisión e impresión de libros contables oficiales en formato reducido y en formato SUNAT.</li>
+            <li>Este módulo es receptora de información.</li>
+            <li>Consolida a nivel de cuentas la información del movimiento económico y financiero de la empresa.</li>
+          </ul>
+        </div>
+        <div class="contenedor-imagesContabilidad relative">
+          <img src={contabilidad.src} alt="" class="contabilidad-image imagenes-rsp" />
+          <div
+            class="iconos-rsp absolute top-8 right-8 bg-c-contabilidad rounded-full p-4"
+          >
+            <Image
+              src={contabilidadIcon}
+              width={64}
+              alt="Servicio ventas e inventario"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="Gproduccion-section" class="scroll-item">
+    <div class="contenedor-produccion-padre">
+      <div class="Gproduccion-titulo gestion-titulo">
+        <h2>GESTIÓN DE <span>PRODUCCIÓN</span></h2>
+      </div>
+      <div class="contenedor-produccion contenedores-general-rsp">
+        <div class="produccion-contenido-G contenido-general-rsp">
+          <ul class="lista-produccion lista-espacio">
+            <li>Permite generar un Plan de Producción Proyectado y Real.</li>
+            <li>Genera los requerimientos de materiales necesarios.</li>
+            <li>Permite el registro de las tareas realizadas y el parte de producción.</li>
+            <li>Genera automáticamente el ingreso a Inventario y su respectivo costeo.</li>
+            <li>Permite registro de fórmulas de producción.</li>
+            <li>Definición de fórmulas o recetas de producción.</li>
+            <li>Registra órdenes de producción.</li>
+            <li>Programación de tareas de producción.</li>
+            <li>Presenta información sobre stock actual, costos y plazos.</li>
+            <li>Gestiona los procesos en función al tareo.</li>
+          </ul>
+        </div>
+        <div class="contenedor-imagesP relative">
+          <img src={produccion.src} alt="" class="produccion-image imagenes-rsp" />
+          <div class="iconos-rsp absolute top-8 right-8 bg-c-produccion rounded-full p-4">
+            <Image
+              src={produccionIcon}
+              width={64}
+              alt="Servicio ventas e inventario"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="GrecursosHumanos-section" class="scroll-item">
+    <div class="contenedor-recursosHumanos-padre">
+      <div class="GrecursosHumanos-titulo gestion-titulo">
+        <h2>GESTIÓN DE <span>RECURSOS HUMANOS</span></h2>
+      </div>
+      <div class="contenedor-recursosHumanos contenedores-general-rsp">
+        <div class="recursos-contenido-G contenido-general-rsp">
+          <ul class="lista-recursos lista-espacio">
+            <li>Herramienta de cálculo de pago de empleados u obreros.</li>
+            <li>Controla la Asistencia del Personal.</li>
+            <li>Permite la especificación del tipo de inasistencia para la exportación a PLAME.</li>
+            <li>Permite la signación de horarios y los compara contra las marcaciones del trabajador.</li>
+            <li>Permite obtener los días y/o horas efectivamente laborados.</li>
+            <li>La base imponible a aplicar para este pago se puede parametrizar desde la configuración del sistema.</li>
+            <li>Emisión de Boleta exclusivamente de gratificación.</li>
+            <li>Realiza el proceso de cálculo según Ley en el mes indicado por el usuario.</li>
+            <li>Emite los certificados de Utilidades y el cuadro de pago de los trabajadores según los importes obtenidos.</li>
+            <li>Según el régimen laboral se obtienen los importes a pagar.</li>
+            <li>Emite el certificado de Beneficios oficiales.</li>
+            <li>Migra la información calculada al PLAME y a la planilla de pagos.</li>
+          </ul>
+        </div>
+        <div class="contenedor-imagesRH relative">
+          <img src={recursosHumanos.src} alt="" class="recursosHumanos-image imagenes-rsp" />
+          <div
+            class="iconos-rsp absolute top-8 right-8 bg-c-recursosHumanos rounded-full p-4"
+          >
+            <Image
+              src={recursosHumanosIcon}
+              width={64}
+              alt="Servicio ventas e inventario"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="Gproyectos-section" class="scroll-item">
+    <div class="contenedor-proyectos-padre">
+      <div class="Gproyectos-titulo gestion-titulo">
+        <h2>GESTIÓN DE <span>PROYECTOS</span></h2>
+      </div>
+      <div class="contenedor-proyectos contenedores-general-rsp">
+        <div class="proyectos-contenido-G contenido-general-rsp">
+          <ul class="lista-proyectos lista-espacio">
+            <li>Permite generar una base de datos de Títulos y Partidas.</li>
+            <li>Permite generar una base de datos de Recursos y metrados a nivel de costos unitarios.</li>
+            <li>Registro del Proyecto y su respectivo presupuesto.</li>
+            <li>Muestra la información en una jerarquía de clasificación(estilo Árbol).</li>
+            <li>Permite generar copias desde un registro o presupuesto ya creado.</li>
+          </ul>
+        </div>
+        <div class="contenedor-imagesProyectos relative">
+          <img src={proyectos.src} alt="" class="proyectos-image imagenes-rsp" />
+          <div class="iconos-rsp absolute top-8 right-8 bg-c-proyectos rounded-full p-4">
+            <Image
+              src={gestionDeProyectosIcon}
+              width={64}
+              alt="Servicio ventas e inventario"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script is:inline>
+    function scrollToAnchor(anchorId) {
+    const anchorElement = document.getElementById(anchorId);
+    if (anchorElement) {
+        anchorElement.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+            inline: "nearest"
+        });
+        history.replaceState(null, null, window.location.pathname);
+    }
+}
+
+// Function to extract hash value from URL and scroll to the corresponding anchor
+function scrollToHash() {
+    const hash = window.location.hash;
+    if (hash) {
+        const anchorId = hash.slice(1);
+        scrollToAnchor(anchorId);
+    }
+}
+    document.addEventListener("astro:load", () => {
+      scrollToHash();
+    });
+  </script>
+</Layout>
+
+<style>
+  div ul{
+    font-size: 17px;
+  }
+  #Gventas-section {
+    width: 100%;
+  }
+  /*--------------------------------------------ESTILOS GENERAL----------*/
+  .gestion-titulo {
+    color: #fff;
+    font-size: 3rem;
+  }
+  .gestion-titulo span {
+    font-weight: bold;
+  }
+  .lista-espacio{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .lista-espacio li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.6em;
+    line-height: 1em;
+  }
+  .lista-espacio li:nth-child(2) {
+    line-height: 1em;
+  }
+  /*-------VENTAS--------*/
+  .contenedor-ventas-padre {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor-ventas {
+    width: 80%;
+    display: flex;
+    height: 85vh;
+    padding: 0 0 50px 0;
+  }
+  .Gventas-titulo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    text-align: center;
+    justify-content: center;
+    background-color: #00abe1;
+  }
+  .ventas-contenido-G {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    justify-content: center;
+    background-color: #fff;
+  }
+  .ventas-image {
+    object-fit: cover;
+    height: 100%;
+  }
+  .lista-ventas li::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    background-image: url("../../assets/checks/checkCeleste.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  /*----------COMPRA Y LOGISTICA----------*/
+  .contenedor-compra-padre {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e2e5e8;
+  }
+  .contenedor-compra {
+    width: 80%;
+    flex: 1 1 0%;
+    display: flex;
+    padding: 0 0 50px 0;
+  }
+  .Gcompra-titulo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    text-align: center;
+    justify-content: center;
+    background-color: #633c8f;
+  }
+  .compra-contenido-G {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    justify-content: center;
+  }
+  .compra-image {
+    object-fit: cover;
+    height: 100%;
+  }
+  .lista-compra li::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    background-image: url("../../assets/checks/checkMorado.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  /*----------TESORERIA----------*/
+  .contenedor-tesoreria-padre {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor-tesoreria {
+    width: 80%;
+    flex: 1 1 0%;
+    display: flex;
+    padding: 0 0 50px 0;
+  }
+  .Gtesoreria-titulo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    text-align: center;
+    justify-content: center;
+    background-color: #f8aa12;
+  }
+  .tesoreria-contenido-G {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    justify-content: center;
+    background-color: #fff;
+  }
+  .tesoreria-image {
+    object-fit: cover;
+    height: 100%;
+  }
+  .lista-tesoreria li::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    background-image: url("../../assets/checks/checkAmarillo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  /*----------CONTABILIDAD----------*/
+  .contenedor-contabilidad-padre {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e2e5e8;
+  }
+  .contenedor-contabilidad {
+    width: 80%;
+    flex: 1 1 0%;
+    display: flex;
+    padding: 0 0 50px 0;
+  }
+  .Gcontabilidad-titulo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    text-align: center;
+    justify-content: center;
+    background-color: #5baa2d;
+  }
+  .contabilidad-contenido-G {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    justify-content: center;
+  }
+  .contabilidad-image {
+    object-fit: cover;
+    height: 100%;
+  }
+  .lista-contabilidad li::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    background-image: url("../../assets/checks/checkVerde.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  /*----------PRODUCCION----------*/
+  .contenedor-produccion-padre {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor-produccion {
+    width: 80%;
+    flex: 1 1 0%;
+    display: flex;
+    padding: 0 0 50px 0;
+  }
+  .Gproduccion-titulo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    text-align: center;
+    justify-content: center;
+    background-color: #005796;
+  }
+  .produccion-contenido-G {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    justify-content: center;
+    background-color: #fff;
+  }
+  .produccion-image {
+    object-fit: cover;
+    height: 100%;
+  }
+  .lista-produccion li::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    background-image: url("../../assets/checks/checkAzul.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  /*----------RECURSOS HUMANOS----------*/
+  .contenedor-recursosHumanos-padre {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e2e5e8;
+  }
+  .contenedor-recursosHumanos {
+    width: 80%;
+    flex: 1 1 0%;
+    display: flex;
+    padding: 0 0 30px 0;
+  }
+  .GrecursosHumanos-titulo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    text-align: center;
+    justify-content: center;
+    background-color: #e94290;
+  }
+  .recursos-contenido-G {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    justify-content: center;
+  }
+  .recursosHumanos-image {
+    object-fit: cover;
+    height: 100%;
+  }
+  .lista-recursos li::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    background-image: url("../../assets/checks/checkRosa.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  /*----------PROYECTOS----------*/
+  .contenedor-proyectos-padre {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section br{
+    display: none;
+  }
+  .contenedor-proyectos {
+    width: 80%;
+    flex: 1 1 0%;
+    display: flex;
+    padding: 0 0 30px 0;
+  }
+  .Gproyectos-titulo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    text-align: center;
+    justify-content: center;
+    background-color: #fe8d00;
+  }
+  .proyectos-contenido-G {
+    display: flex;
+    align-items: center;
+    width: 50vw;
+    justify-content: center;
+    background-color: #fff;
+  }
+  .proyectos-image {
+    object-fit: cover;
+    height: 100%;
+  }
+  .lista-proyectos li::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    background-image: url("../../assets/checks/checkNaranja.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .scroll-item {
+    scroll-snap-align: start;
+  }
+  /*prueba de responsive*/
+  @media (max-width: 900px) {
+    .contenedores-general-rsp{
+      width: 90%;
+    }
+    .contenido-general-rsp{
+      width: 100%;
+    }
+    .imagenes-rsp{
+      display: none;
+    }
+    .iconos-rsp{
+      width: 80px;
+      margin-top: -1.5rem;
+      margin-right: -2.7rem;
+    }
+    .gestion-titulo{
+      height: 10vh;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .lista-espacio{
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+  }
+  @media (max-width: 425px) {
+    .contenedores-general-rsp{
+      width: 90%;
+    }
+    .contenido-general-rsp{
+      width: 100%;
+    }
+    .imagenes-rsp{
+      display: none;
+    }
+    .iconos-rsp{
+      width: 80px;
+      margin-top: -1.5rem;
+      margin-right: -2.7rem;
+    }
+    .gestion-titulo{
+      height: 10vh;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .lista-espacio{
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+  }
+  @media(max-width: 375px){
+    .iconos-rsp{
+      display: none;
+    }
+    .contenedores-general-rsp{
+      width: 96%;
+    }
+  }
+</style>

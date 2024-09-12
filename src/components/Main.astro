@@ -1,0 +1,52 @@
+---
+import sliderL1 from "@assets/images/sliders/SLIDER-1920-X-500-PROMOCION.png";
+import sliderL2 from "@assets/images/sliders/SLIDER-1920-X-500-PUBLI1.png";
+import sliderL3 from "@assets/images/sliders/SLIDER-1920-X-500-PUBLI2.png";
+
+import sliderM1 from "@assets/images/sliders/SLIDER-700-X-370-PROMOCION.png";
+import sliderM2 from "@assets/images/sliders/SLIDER-700-X-370-PUBLI1.png";
+import sliderM3 from "@assets/images/sliders/SLIDER-700-X-370-PUBLI2.png";
+---
+
+<div class="relative">
+  <swiper-container navigation="true" loop="true" autoplay autoplay-delay="6000" class="w-full border-2">
+    <swiper-slide class="relative">
+      <a href="/"><img src={sliderM1.src} class="block lg:hidden w-full" /><img src={sliderL1.src} class="hidden lg:block hw-full" /></a>
+      
+    </swiper-slide>
+    <swiper-slide>
+      <a href="/"><img src={sliderM2.src} class="block lg:hidden w-full" /><img src={sliderL2.src} class="hidden lg:block hw-full" /></a>
+    </swiper-slide>
+    <swiper-slide>
+      <a href="/"><img src={sliderM3.src} class="block lg:hidden w-full" /><img src={sliderL3.src} class="hidden lg:block hw-full" /></a>
+    </swiper-slide>
+  </swiper-container>
+  <div class="absolute -bottom-7 z-30 left-1/2 transform -translate-x-1/2">
+    <a href="/nosotros/contactenos" class="btn-Main-cotiza btn md:btn-sm lg:btn-lg btn-warning font-bold text-white">COTIZA CON NOSOTROS</a>
+  </div>
+</div>
+
+<script>
+  import { register } from "swiper/element/bundle";
+  register();
+</script>
+<style>
+  .cotiza {
+    left: 47%;
+  }
+  .btn-Main-cotiza:hover{
+    background-color: #FC4F00;
+  }
+  @media(min-width: 1920px){
+    .btn-Main-cotiza{
+      height: 5.5rem;
+      border-radius: 20px;
+      font-size: 1.5rem;
+    }
+  }
+  @media(max-width: 900px){
+    .btn-Main-cotiza{
+      height: 3rem;
+    }
+  }
+</style>

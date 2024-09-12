@@ -1,0 +1,301 @@
+---
+import Layout from "@layouts/Layout.astro";
+import pointerLogoP from "@assets/images/nosotros/p-pointer-blanco.png";
+import diseño from "@assets/svgs/PagNosotros/icondisenhoamigable.svg";
+import soporte from "@assets/svgs/PagNosotros/iconsoportepermanente.svg";
+import actualizaciones from "@assets/svgs/PagNosotros/iconactualizaciones.svg";
+import compatible from "@assets/svgs/PagNosotros/iconcompatible.svg";
+import NosotrosReact from "@components/TsParticles/nosotrosReact";
+import { Image } from "astro:assets";
+---
+
+<Layout title="Nosotros" wrap="min-h-screen flex flex-col">
+    <div class="fondo-nosotros flex-1 caja-1-padre relative z-10" slot="after-header">
+        <div class="caja-hijo z-30">
+            <div class="logo-nosotros z-30">
+                <img src={pointerLogoP.src} alt="support">
+            </div>
+            <div class="caja-contenido">
+                <div class="mision-caja">
+                    <h2>NUESTRA MISIÓN</h2>
+                    <p>
+                        "Automatizar y transformar energéticamente <br> los procesos de negocio con soluciones de primera".
+                    </p><br><br>
+                </div>
+                <div class="vision-caja">
+                    <h2>NUESTRA VISIÓN</h2>
+                    <p>
+                        "Lograr que nuestros clientes ahorren tiempo y dinero".
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="caja-iconos-nosotros z-30">
+            <div>
+                <img src={diseño.src} alt="" class="icono-diseño">
+                <h2>DISEÑO <br>AMIGABLE</h2>
+            </div>
+            <div>
+                <img src={soporte.src} alt="" class="icono-soporte">
+                <h2>SOPORTE <br>PERMANENTE</h2>
+            </div>
+            <div>
+                <img src={actualizaciones.src} alt="" class="icono-actualizaciones">
+                <h2>ACTUALIZACIONES <br>CONSTANTES</h2>
+            </div>
+            <div>
+                <img src={compatible.src} alt="" class="icono-compatible">
+                <h2>COMPATIBLE CON <br>TODOS LOS SIST. OPERATIVOS</h2>
+            </div>
+        </div>
+        <div class="absolute inset-0 z-20"><NosotrosReact client:only="react" /></div>
+    </div>
+    <div class="caja-2-padre">
+        <div class="caja-funcionalidad">
+            <h2>FUNCIONALIDAD</h2>
+            <p>
+                Gestiona de una forma adaptable todas las áreas de la empresa. Pointer ERP permitirá alinearlo si detecta inconsistencia, información inadecuada.
+                Otra característica importante es que la base de datos es centralizada y sus componentes interactúan entre sí, consolidando todas las operaciones, permitiendo ingresar los datos una sola vez.
+            </p>
+            <div class="cotiza">
+                <a href="/nosotros/contactenos"><button>COTIZA CON <span>NOSOTROS</span></button></a>
+            </div>
+        </div>
+        <div class="caja-beneficios">
+            <h2>BENEFICIOS</h2>
+            <ul class="lista-beneficios lista-espacio">
+                <li>Bajo costo, sin gastos de licencias.</li>
+                <li>Retorno instantáneo de la inversión.</li>
+                <li>Diseñado específicamente para el mercado de <br> empresas de todo tipo y nivel.</li>
+                <li>Característica de sistema totalmente integrado.</li>
+                <li>No depende de otros software.</li>
+                <li>Fácil de usar e intuitivo.</li>
+                <li>La toma de decisiones proactiva.</li>
+                <li>Escalable lo que permite que su negocio crezca.</li>
+                <li>Una mayor visibilidad y control de su negocio.</li>
+                <li>Visión en tiempo real de su negocio.</li>
+            </ul>
+            <div class="cotiza-rsp">
+                <a href="/nosotros/contactenos"><button>COTIZA CON <span>NOSOTROS</span></button></a>
+            </div>
+        </div>
+    </div>
+
+</Layout>
+<style>
+    .fondo-nosotros {
+        background-image: url(../../assets/images/SLIDER.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: left;
+        color: #fff;
+    }
+    .logo-nosotros img{
+        width: 380px;
+    }
+    .caja-2-padre{
+        width: 100%;
+        gap: 50px;
+        display: flex;
+        justify-content: center;
+        margin: 50px 0;
+    }
+    .caja-beneficios{
+        width: 40%;
+    }
+    .caja-funcionalidad{
+        width: 40%;
+    }
+    .caja-2-padre h2{
+        color: #005796;
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .lista-beneficios li::before{
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+        background-image: url('../../assets/checks/checkAzul.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .cotiza{
+        background-color: #fe8d00;
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        font-weight: bold;
+        font-size: 22px;
+        padding: 10px;
+        border-radius: 18px;
+        margin-top: 10px;
+        width: 75%;
+    }
+    .cotiza:hover{
+        background-color: #FC4F00;
+    }
+    .cotiza-rsp{
+        display: none;
+    }
+    .lista-espacio li{
+        display: flex;
+        align-items: center;
+        margin-bottom: .6em;
+        line-height: 1em;
+    }
+    .caja-contenido{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        line-height: 1.2em;
+    }
+    .caja-contenido h2{
+        margin-bottom: 8px;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    .caja-contenido p{
+        font-size: 17px;
+    }
+    .caja-hijo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 0%;
+        gap: 30px;
+    }
+    .mision-caja p{
+        margin-bottom: 25px;
+    }
+    .caja-iconos-nosotros img{
+        width: 75px;
+        height: 75px;
+        border-radius: 40px;
+        padding: 10px;
+    }
+    .caja-iconos-nosotros div{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 40px;
+    }
+    .caja-iconos-nosotros{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .caja-1-padre{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+    }
+    @media(max-width: 900px){
+        .logo-nosotros img{
+            width: 290px;
+        }
+        .caja-2-padre{
+            width: 100%;
+            gap: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        .caja-beneficios{
+            width: 40%;
+        }
+        .caja-funcionalidad{
+            width: 40%;
+        }
+        .caja-1-padre{
+            position: relative;
+        }
+        .caja-iconos-nosotros{
+            bottom: .5rem;
+            font-size: 14px;
+        }
+        .caja-iconos-nosotros div{
+            display: flex;
+            align-items: center;
+            gap: 2px;
+        }
+        .cotiza{
+            width: 100%;
+        }
+    }
+    @media(max-width: 425px){
+        .caja-1-padre{
+            padding: 20px 0;
+        }
+        .caja-2-padre{
+            width: 100%;
+            gap: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 16px;
+        }
+        .caja-iconos-nosotros{
+            font-size: 12px;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 8px;
+        }
+        .caja-iconos-nosotros div{
+            margin-bottom: 2px;
+            flex-direction: column;
+        }
+        .caja-iconos-nosotros img{
+            width: 50px;
+            height: 50px;
+            padding: 2px;
+        }
+        .caja-hijo{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 20px;
+            flex: 1 1 0%;
+        }
+        .logo-nosotros img{
+            width: 190px;
+        }
+        .mision-caja p{
+            margin-bottom: 4px;
+        }
+        .caja-beneficios{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .caja-funcionalidad{
+            width: 100%;
+        }
+        .caja-funcionalidad h2{
+            text-align: center;
+        }
+        .cotiza{
+            display: none;
+        }
+        .cotiza-rsp{
+            display: block;
+        }
+        .cotiza-rsp{
+            background-color: #fe8d00;
+            color: #fff;
+            font-weight: bold;
+            font-size: 22px;
+            padding: 8px;
+            border-radius: 18px;
+            margin-top: 10px;
+            width: 75%;
+        }
+        .cotiza-rsp:hover{
+            background-color: #FC4F00;
+        }
+    }
+</style>
+

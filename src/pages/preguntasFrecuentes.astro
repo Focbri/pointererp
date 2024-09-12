@@ -1,0 +1,218 @@
+---
+import Layout from "@layouts/Layout.astro";
+import pointerP from "@assets/images/preguntasF/p-pointer-azul.png";
+import PreguntasReact from "@components/TsParticles/preguntasReact"
+import { Image } from "astro:assets";
+---
+
+<Layout title="Preguntas Frecuentes">
+  <div class="fondo-preguntas relative">
+    <h2 class="z-30 text-4xl">PREGUNTAS FRECUENTES SOBRE LOS ERP</h2>
+    <div class="absolute inset-0 z-10"><PreguntasReact client:only="react" /></div>
+  </div>
+  <div class="caja-padre1">
+    <div class="logo-pointerP">
+      <img src={pointerP.src} alt="" />
+    </div>
+    <div class="caja-contenido">
+      <div class="pregunta-caja1">
+        <h2>¿Mi empresa necesita un ERP?</h2>
+        <p>
+          Responder a esta pregunta no es una tarea simple, sobre todo si se <br
+          /> trata de ser específico con cada usuario que formule. Esto se debe a<br
+          /> que cada empresa es diferente, tanto en productos, tamaños, <br /> necesidades
+          y presupuestos como en sectores y contextos.
+        </p><br />
+        <p>
+          Hay empresas que necesitan un ERP software más que otras, por <br /> ejemplo,
+          aquellas pertenecientes a los sectores manufacturero, <br /> logístico
+          y alimenticio. Sin embargo, un ERP puede serle de utilidad a <br /> casi
+          cualquier empresa.
+        </p><br />
+        <p>
+          Por tanto, lo mejor es que tú detectes si tu empresa requiere un <br
+          /> sistema de planificación o no, tomando en cuenta todos los factores
+          ya <br /> mencionados. Porque, ¿Quién conoce las necesidades de tu empresa
+          <br /> mejor que tú?
+        </p><br /><br />
+      </div>
+      <div class="pregunta-caja2">
+        <h2>Importancia de los ERP en la Gestión Empresarial</h2>
+        <p>
+          Como ya dijimos, un ERP para empresas está dirigido a todo tipo de <br
+          /> empresas que requieran mejorar los tiempos de planificación y gestión
+          <br /> de los proyectos. Recordemos que un ERP es un sistema de <br />
+          planificación de recursos empresariales y está destinado a la gestión y
+          <br /> planificación sistemática.
+        </p><br />
+        <p>
+          Por tanto, es aplicable a una gran variedad de empresas, tanto <br /> pequeñas
+          y medianas como grandes y gigantes. De hecho, un ERP se <br /> vuelve más
+          necesario a medida que la empresa crece.
+        </p><br />
+      </div>
+    </div>
+  </div><br>
+  <div class="container mx-auto caja-padre2">
+    <h2 class="text-pointer-text text-xl font-bold">
+      ¿Cuanto tarda la implementación de estos softwares?
+    </h2>
+    <p class="text-lg">
+      Por norma general, la implementación de un ERP software toma todo un año,
+      vale destacar que a veces varía dicho lapso. Por ejemplo, el proceso puede
+      tardar, como mínimo 6 meses, mientras que en otras ocaciones puede llegar
+      a superar los 18 meses.
+    </p><br>
+    <p class="text-lg">
+      Todo esto dependerá de los factores, como por ejemplo: el tamaño de la
+      empresa y la eficiencia y velocidad de los proveedores. Además, de la
+      cooperación que exista entre ambos.
+    </p><br><br>
+    <h2 class="text-pointer-text text-xl font-bold">
+      ¿Cómo se puede implementar efectivamente un ERP en una empresa?
+    </h2>
+    <p class="text-lg">
+      Para ello, es importante que el ERP para empresas cumpla con todos los
+      requisitos indispensables para la empresa y que cuente con un equipo
+      durante su implantación. Comúnmente, este equipo de asistencia técnica es
+      asignado por los proveedores del ERP software.
+    </p><br>
+    <p class="text-lg">
+      Además, es necesario que la empresa lleve una lista con las tareas
+      relacionadas a su implantación. De esta forma, se puede llevar un control
+      metódico de los pasos a realizar durante el proceso. Por supuesto, también
+      es necesaria una comunicación constante entre la empresa y el proveedor
+      para evitar contratiempos y malentendidos.
+    </p><br><br>
+    <h2 class="text-pointer-text text-xl font-bold">
+      ¿Cómo puedo elegir el mejor ERP para mi empresa?
+    </h2>
+    <p class="text-lg">
+      Elegir el mejor ERP software no es fácil, sobre todo si conoces muchas
+      opciones y no estás seguro de las necesidades de tu empresa. Por tanto, es
+      necesario que investigues qué puntos debe reforzar un ERP en tu empresa.
+    </p><br>
+    <p class="text-lg">
+      Además, investiga que haya una buena relación entre las siguientes
+      características del ERP para empresas que vayas a adquirir:
+    </p><br>
+    <ul class="list-disc text-lg ml-12">
+      <li>Buena atención al cliente.</li>
+      <li>Excelente soporte técnico.</li>
+      <li>Precios asequibles.</li>
+      <li>Ajustes personalizados.</li>
+      <li>Funciones útiles y eficaces.</li>
+    </ul><br>
+
+        <p class="text-lg">
+        Por último, es muy importante que el ERP que adquieras cumpla todas
+        aquellas funciones que tu anterior ERP no cumplía Pero en caso de que no
+        hayas tenido algún ERP en el pasado, investiga que el que vas a implantar
+        cumpla con los estándares de
+        </p><br><br>
+        <h2 class="text-pointer-text text-xl font-bold">
+        ¿Puedo personalizar mi ERP para que se ajuste mejor a mi empresa?
+        </h2>
+        <p class="text-lg">
+        Esto dependerá del proveedor en si y el de personalización que trates de
+        alcanzar. Cada ERP posee datos diferentes, ya pue pertenecen a diferentes
+        empresas y esto requiere cierto grado de personalización.
+        </p><br>
+        <p class="text-lg">
+        Por otro lado, personalizaciones extremas pueden ser desventajosas en ERP
+        para empresas, pues pueden perder parte de su eficiencia, En cualquier
+        caso, es necesario consultar al proveedor para que brinde guía en el
+        proceso.
+        </p><br><br>
+        <h2 class="text-pointer-text text-xl font-bold">
+        ¿Cómo puedo formar a mis empleados para usar adecuadamente un ERP para
+        empresas?
+        </h2>
+        <p class="text-lg">
+        Normalmente, los proveedores ofrecen documentación acerca de cómo usar los
+        ERP softwares que ofrecen a sus clientes, de modo que puedan aprender a
+        usarlos, Por tanto. esta documentación avanzada puede ser un excelente
+        media de formación.
+        </p><br>
+        <p class="text-lg">
+        Además, puedes consultar con tus proveedores para averiguar si ofrecen
+        algún tipo de formación adicional, como cursos o guías. También puedes
+        buscar formaciones externas, aunque pueden no adaptarse adecuadamente a tu
+        ERP de forma específica.
+        </p><br><br>
+        <h2 class="text-pointer-text text-xl font-bold">
+        ¿Aún no estás seguro de necesitar un ERP? ¡Averígualo ya mismo!
+        </h2><br>
+        <div class="flex justify-center preguntaButon">
+            <a href="/nosotros/contactenos"><button class="btn btn-warning text-white text-xl h-14 font-bold">COTIZA CON NOSOTROS</button></a>
+        </div>
+        <br>
+  </div>
+</Layout>
+
+<style>
+  .preguntaButon button:hover{
+    background-color: #FC4F00;
+  }
+  .fondo-preguntas {
+    background-image: url(../assets/images/fondoPreguntas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+  }
+  .fondo-preguntas h2 {
+    font-weight: bold;
+    color: #fff;
+    padding-left: 8%;
+  }
+  .caja-padre1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 0 40px 0;
+    line-height: 1.2em;
+  }
+  .caja-padre2{
+    padding: 0 40px 0 40px;
+  }
+  .caja-padre2 p{
+    line-height: 1.2em;
+  }
+  .caja-padre2 h2{
+    margin-bottom: 10px;
+  }
+  .caja-contenido h2 {
+    color: #005796;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .logo-pointerP{
+    width: 380px;
+  }
+  @media(max-width: 900px){
+    .caja-padre1{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media(max-width:425px){
+    .caja-padre1{
+      display: flex;
+      flex-direction: column;
+      padding: 0 40px;
+    }
+    .logo-pointerP{
+      width: 300px;
+      padding-top: 20px;
+    }
+    .fondo-preguntas h2{
+      text-align: center;
+      padding: 16px;
+    }
+  }
+</style>

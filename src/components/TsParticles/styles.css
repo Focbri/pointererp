@@ -1,0 +1,26 @@
+#tsparticlesBanner{
+    height: 100%;
+}
+#tsparticlesNosotros{
+    height: 100%;
+}
+#tsparticlesPreguntas{
+    height: 100%;
+}
+#tsparticlesSolucion{
+    height: 100%;
+}
+@media(max-width: 425px){
+    #tsparticlesBanner{
+        height: 202px;
+    }
+    #tsparticlesNosotros{
+        height: 100%;
+    }
+    #tsparticlesPreguntas{
+        height: 100%;
+    }
+    #tsparticlesSolucion{
+        height: 100%;
+    }
+}

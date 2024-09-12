@@ -1,0 +1,584 @@
+---
+import Layout from "@layouts/Layout.astro";
+import ventasIcon from "@assets/svgs/ICON VENTASVENTAS.svg";
+import comprasIcon from "@assets/svgs/ICON COMPRASBLANCO.svg";
+import tesoreriaIcon from "@assets/svgs/ICON TESORERIABLANCO.svg";
+import contabilidadIcon from "@assets/svgs/ICON CONTABILIDADBLANCO.svg";
+import produccionIcon from "@assets/svgs/ICON PRODUCCIONBLANCO.svg";
+import recursosHumanosIcon from "@assets/svgs/ICON RECURSOSMHBLANCO.svg";
+import proyectosIcon from "@assets/svgs/ICON PROYECTOSBLANC.svg";
+const invAlt = "Logo servicio de inventario";
+const { width } = Astro.props;
+---
+
+<Layout title="soluciones">
+  <!----------------------------Sección: Solución Emprendedor-------------------------------->
+  <section id="emprendedor-section">
+    <div class="emprendedor-Cpadre">
+      <div class="emprendedor-titulo fondo-titulo titulo-soluciones relative">
+        <h2>SOLUCIÓN <span>EMPRENDEDOR</span></h2>
+        <div
+          class="icons-items items-rsp flex absolute z-40 bottom-1 right-32 transform translate-y-1/2"
+        >
+          <div class="ventasIcon iconos-dimensiones">
+            <a href="/gestion/gestiones#Gventas-section"><img src={ventasIcon.src} alt="" class="icono-v" /></a>
+          </div>
+          <div class="comprasIcon iconos-dimensiones">
+            <a href="/gestion/gestiones#Gcompra-section"><img src={comprasIcon.src} alt="pendiente" class="icono-c"/></a>
+          </div>
+        </div>
+      </div>
+      <div class="emprendedor-contenido contenido-cajas">
+        <div class="emprendedor-column1 column1">
+          <ul class="lista-ventas lista-espacio">
+            <li>Bajo costo, sin gastos de licencias.</li>
+            <li>Retorno instantáneo de la inversión.</li>
+            <li>
+              Diseñado específicamente para <br />el mercado de empresa de todo
+              tipo y<br /> nivel.
+            </li>
+            <li>Característica de sistema totalmente<br /> integrado.</li>
+            <li>No depende de otros software.</li>
+            <li>Fácil de usar e intuitivo.</li>
+            <li>La toma de decisiones proactiva.</li>
+            <li>Escalable lo que permite que su negocio<br /> crezca.</li>
+            <li>Una mayor visibilidad y control de su<br /> negocio.</li>
+            <li>Visión en tiempo real de su negocio.</li>
+          </ul>
+        </div>
+        <div class="emprendedor-column2 column2">
+          <ul  class="lista-compra lista-espacio">
+            <li>Registra todas las requisiciones.</li>
+            <li>Genera requerimientos internos.</li>
+            <li>Genera órdenes de compra de productos<br />o servicios.</li>
+            <li>Permite crear almacenes por sede.</li>
+            <li>Ingresa productos agrupándolos por lista<br /> de precios.</li>
+            <li>Puede hacer traslado de productos entre<br /> sucursales.</li>
+            <li>Permite manejo de atributos del producto</li>
+            <li>Crea e imprime código de barra</li>
+            <li>Controla Stock de productos</li>
+            <li>Permite impresión masiva de códigos</li>
+            <li>
+              Permite el Registro de las Compras y <br />Registro de
+              Importaciones
+            </li>
+            <li>
+              Está totalmente integrado con el módulo<br /> de Tesoreria y contabilidad
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="buton-cotiza">
+        <a href="/nosotros/contactenos"><button>COTIZA CON<br />NOSOTROS</button></a>
+      </div>
+    </div>
+  </section>
+  <!----------------------------Sección: Solución Profesional-------------------------------->
+  <section id="profesional-section">
+    <div class="profesional-Cpadre">
+      <div class="profesional-titulo fondo-titulo titulo-soluciones relative">
+        <h2>SOLUCIÓN <span>PROFESIONAL</span></h2>
+        <div
+          class="icons-items items-rsp flex absolute  bottom-1 right-32 transform translate-y-1/2"
+        >
+          <div class="ventasIcon iconos-dimensiones">
+            <a href="/gestion/gestiones#Gventas-section"><img src={ventasIcon.src} alt="" class="icono-v" /></a>
+          </div>
+          <div class="comprasIcon iconos-dimensiones">
+            <a href="/gestion/gestiones#Gcompra-section"><img src={comprasIcon.src} alt="pendiente" class="icono-c" /></a>
+          </div>
+          <div class="tesoreriaIcon iconos-dimensiones">
+            <a href="/gestion/gestiones#Gtesoreria-section"><img src={tesoreriaIcon.src} alt="" class="icono-t" /></a>
+          </div>
+          <div class="contabilidadIcon iconos-dimensiones">
+            <a href="/gestion/gestiones#Gcontabilidad-section"><img src={contabilidadIcon.src} alt="pendiente" class="icono-conta"/></a>
+          </div>
+        </div>
+        <div
+          class="sub-titulo-solucion py-4 inline-flex gap-1 absolute  bottom-1 left-32 transform translate-y-full text-primary"
+        >
+          <h1 class="text-2xl font-bold">Solucion</h1><h1
+            class="font-extrabold font-2xl"
+          >
+            Emprendedor +
+          </h1>
+        </div>
+      </div>
+      <div class="profesional-contenido contenido-cajas">
+        <div class="profesional-column1 column1">
+          <ul class="lista-tesoreria lista-espacio">
+            <li>
+              Controla todo el flujo de Cuentas por<br />Cobrar y Cuentas por
+              Pagar.
+            </li>
+            <li>Permite realizar cobros a través de cajas y<br /> bancos.</li>
+            <li>
+              Permite el realizar múltiples<br /> programaciones de pagos.
+            </li>
+            <li>
+              Permite realizar canje con letras o<br /> documentos de cuentas por
+              pagar.
+            </li>
+            <li>
+              Crea todas las cajas y bancos necesarios<br /> con sus monedas.
+            </li>
+            <li>
+              Manejo de Letras de cambios, notas de<br /> abono y de cargo.
+            </li>
+            <li>
+              Permite impresiones de documentos<br /> como cheques, vouchers.
+            </li>
+            <li>
+              Permite gestionar los distintos conceptos<br /> tributarios.
+            </li>
+            <li>
+              Podrá realizar las conciliciones de las<br /> diferentes cuentas corrientes.
+            </li>
+            <li>
+              Este módulo está integrado con el área<br /> de cuentas por cobrar
+              y pagar.
+            </li>
+          </ul>
+        </div>
+        <div class="profesional-column2 column2">
+          <ul class="lista-contabilidad lista-espacio">
+            <li>
+              Permite realizar consultas gerenciales a<br /> diferentes niveles.
+            </li>
+            <li>Opciones multiempresa.</li>
+            <li>Módulo multimoneda.</li>
+            <li>Garantiza la integridad de la información.</li>
+            <li>
+              Configuración personalizada por el<br /> usuario de los principales
+              EEFF.
+            </li>
+            <li>
+              Emisión e impresión de libros contables<br /> oficiales en formato
+              reducido y en<br /> formato SUNAT.
+            </li>
+            <li>Este módulo es receptora de información.</li>
+            <li>
+              Consolida a nivel de cuentas la<br /> información del movimiento económico
+              y<br />financiero de la empresa.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="buton-cotiza">
+        <a href="/nosotros/contactenos"><button>COTIZA CON<br />NOSOTROS</button></a>
+      </div>
+    </div>
+  </section>
+  <!----------------------------Sección: Solución Corporativo-------------------------------->
+  <section id="corporativo-section">
+    <div class="corporativo-Cpadre">
+      <div class="corporativo-titulo fondo-titulo titulo-soluciones relative ">
+        <h2>SOLUCIÓN <span>CORPORATIVO</span></h2>
+        <div
+          class="icons-items items-rsp flex absolute bottom-1 right-32 transform translate-y-1/2"
+        >
+          <div class="ventasIcon iconos-dimensiones">
+            <a href="/gestion/gestiones#Gventas-section"><img src={ventasIcon.src} alt="" class="icono-v" /></a>
+          </div>
+          <div class="comprasIcon iconos-dimensiones">
+            <a href="/gestion/gestiones#Gcompra-section"><img src={comprasIcon.src} alt="pendiente" class="icono-c" /></a>
+          </div>
+          <div class="tesoreriaIcon iconos-dimensiones">
+            <a href="/gestion/gestiones#Gtesoreria-section"><img src={tesoreriaIcon.src} alt="" class="icono-t" /></a>
+          </div>
+          <div class="contabilidadIcon iconos-dimensiones">
+            <a href="/gestion/gestiones#Gcontabilidad-section"><img src={contabilidadIcon.src} alt="pendiente" class="icono-conta"/></a>
+          </div>
+          <div class="produccionIcon iconos-dimensiones">
+            <a href="/gestion/gestiones#Gproduccion-section"><img src={produccionIcon.src} alt="pendiente" class="icono-p" /></a>
+          </div>
+          <div class="recursosIcon iconos-dimensiones">
+            <a href="/gestion/gestiones#GrecursosHumanos-section"><img src={recursosHumanosIcon.src} alt="" class="icono-r" /></a>
+          </div>
+          <div class="proyectosIcon iconos-dimensiones">
+            <a href="/gestion/gestiones#Gproyectos-section"><img src={proyectosIcon.src} alt="pendiente" class="icono-proyectos" /></a>
+          </div>
+        </div>
+        <div
+          class="sub-titulo-solucion py-4 inline-flex gap-1 absolute  bottom-1 left-32 transform translate-y-full text-primary"
+        >
+          <h1 class="text-2xl font-bold">Solucion</h1><h1
+            class="font-extrabold font-2xl"
+          >
+            Profesional +
+          </h1>
+        </div>
+      </div>
+      <div class="corporativo-contenido contenido-cajas">
+        <div class="corporativo-column1 column1">
+          <ul class="lista-espacio">
+            <li class="lista-produccion">
+              Permite generar un Plan de Producción<br /> Proyectado y Real.
+            </li>
+            <li class="lista-produccion">Genera los requerimientos de materiales<br /> necesarios.</li>
+            <li class="lista-produccion">
+              Permite el registro de las tareas realizadas<br /> y el parte de producción.
+            </li>
+            <li class="lista-produccion">
+              Genera automáticamente el ingreso a<br /> Inventario y su respectivo
+              costeo.
+            </li>
+            <li class="lista-produccion">Permite registro de fórmulas de<br /> producción.</li>
+            <li class="lista-produccion">Definición de fórmulas o recetas de<br /> producción.</li>
+            <li class="lista-produccion">Registra órdenes de producción.</li>
+            <li class="lista-produccion">Programación de tareas de producción.</li>
+            <li class="lista-produccion">
+              Presenta información sobre stock actual,<br /> costos y plazos.
+            </li>
+            <li class="lista-produccion">Gestiona los procesos en función al tareo.</li>
+            <li class="lista-proyectos">
+              Permite generar una base de datos de<br /> Títulos y Partidas.
+            </li>
+            <li class="lista-proyectos">
+              Permite generar una base de datos de<br /> Recursos y metrados a nivel
+              de<br /> costos unitarios.
+            </li>
+            <li class="lista-proyectos">Registro del Proyecto y su respectivo<br /> presupuesto.</li>
+            <li class="lista-proyectos">
+              Muestra la información en una jerarquía<br /> de clasificación(estilo
+              Árbol).
+            </li>
+            <li class="lista-proyectos">
+              Permite generar copias desde un registro<br /> o presupuesto ya creado.
+            </li>
+          </ul>
+        </div>
+        <div class="corporativo-column2 column2">
+          <ul class="lista-recursos lista-espacio">
+            <li>
+              Herramienta de cálculo de pago de<br /> empleados u obreros.
+            </li>
+            <li>Controla la Asistencia del Personal.</li>
+            <li>
+              Permite la especificación del tipo de<br /> inasistencia para la exportación
+              a PLAME.
+            </li>
+            <li>
+              Permite la signación de horarios y los<br /> compara contra las marcaciones
+              del<br /> trabajador.
+            </li>
+            <li>
+              Permite obtener los días y/o horas<br /> efectivamente laborados.
+            </li>
+            <li>
+              La base imponible a aplicar para este pago<br /> se puede parametrizar
+              desde la<br /> configuración del sistema.
+            </li>
+            <li>Emisión de Boleta exclusivamente de<br /> gratificación.</li>
+            <li>
+              Realiza el proceso de cálculo según Ley en<br /> el mes indicado por
+              el usuario.
+            </li>
+            <li>
+              Emite los certificados de Utilidades y el<br /> cuadro de pago de los
+              trabajadores según<br /> los importes obtenidos.
+            </li>
+            <li>
+              Según el régimen laboral se obtienen los<br /> importes a pagar.
+            </li>
+            <li>Emite el certificado de Beneficios oficiales.</li>
+            <li>
+              Migra la información calculada al PLAME y<br /> a la planilla de pagos.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="buton-cotiza">
+        <a href="/nosotros/contactenos"><button>COTIZA CON<br />NOSOTROS</button></a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+    div ul{
+      font-size: 18px;
+    }
+    /*------checks-----*/
+    .lista-ventas li::before{
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+        background-image: url('../../assets/checks/checkCeleste.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .lista-compra li::before{
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+        background-image: url('../../assets/checks/checkMorado.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .lista-tesoreria li::before{
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+        background-image: url('../../assets/checks/checkAmarillo.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .lista-contabilidad li::before{
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+        background-image: url('../../assets/checks/checkVerde.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    ul .lista-produccion::before{
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+        background-image: url('../../assets/checks/checkAzul.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .lista-recursos li::before{
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+        background-image: url('../../assets/checks/checkRosa.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    ul .lista-proyectos::before{
+        content: '';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+        background-image: url('../../assets/checks/checkNaranja.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .lista-espacio li{
+        display: flex;
+        align-items: center;
+        margin-bottom: .6em;
+        line-height: 1em;
+    }
+    .lista-espacio li:nth-child(2){
+        line-height: 1em;
+    }
+    .icono-v {
+        padding: 16px;
+    }
+    .ventasIcon {
+        background-color: #00abe1;
+        border-radius: 50px;
+        cursor: pointer;
+        width: 70px;
+        height: 70px;
+    }
+    .icono-c {
+        padding: 16px;
+    }
+    .comprasIcon {
+        background-color: #633c8f;
+        border-radius: 50px;
+        cursor: pointer;
+        width: 70px;
+        height: 70px;
+    }
+    .icono-t {
+        padding: 16px;
+    }
+    .tesoreriaIcon {
+        background-color: #f8aa12;
+        border-radius: 50px;
+        cursor: pointer;
+        width: 70px;
+        height: 70px;
+    }
+    .icono-conta {
+        padding: 16px;
+    }
+    .contabilidadIcon {
+        background-color: #5baa2d;
+        border-radius: 50px;
+        cursor: pointer;
+        width: 70px;
+        height: 70px;
+    }
+    .icono-p {
+        padding: 16px;
+    }
+    .produccionIcon {
+        background-color: #005796;
+        border-radius: 50px;
+        cursor: pointer;
+        width: 70px;
+        height: 70px;
+    }
+    .icono-r {
+        padding: 16px;
+    }
+    .recursosIcon {
+        background-color: #e94290;
+        border-radius: 50px;
+        cursor: pointer;
+        width: 70px;
+        height: 70px;
+    }
+    .icono-proyectos {
+        padding: 16px;
+    }
+    .proyectosIcon {
+        background-color: #fe8d00;
+        border-radius: 50px;
+        cursor: pointer;
+        width: 70px;
+        height: 70px;
+    }
+    .icons-items{
+      gap: 2rem;
+    }
+    /*------------*/
+    .fondo-titulo {
+        background-image: url(../../assets/images/FONDOSOLUCION.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 136px;
+        text-align: left;
+    }
+    .titulo-soluciones {
+        color: #fff;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        padding-left: 100px;
+    }
+    .titulo-soluciones span {
+        font-weight: bold;
+    }
+    .contenido-cajas {
+        margin-top: 60px;
+    }
+    .emprendedor-Cpadre {
+        width: 100%;
+    }
+    .profesional-Cpadre {
+        width: 100%;
+    }
+    .corporativo-Cpadre {
+        width: 100%;
+    }
+    .emprendedor-contenido {
+        display: flex;
+        justify-content: center;
+        gap: 8vw;
+    }
+    .emprendedor-column1 ul {
+        list-style-type: disc;
+    }
+    .emprendedor-column2 ul {
+        list-style-type: disc;
+    }
+    /*segunda caja | solucion*/
+    .profesional-contenido {
+        display: flex;
+        justify-content: center;
+        gap: 8vw;
+    }
+    .profesional-column1 ul {
+        list-style-type: disc;
+    }
+    .profesional-column2 ul {
+        list-style-type: disc;
+    }
+    /*tercera caja | solucion*/
+    .corporativo-contenido {
+        display: flex;
+        justify-content: center;
+        gap: 8vw;
+    }
+    .corporativo-column1 ul {
+        list-style-type: disc;
+    }
+    .corporativo-column2 ul {
+        list-style-type: disc;
+    }
+    .buton-cotiza {
+        display: flex;
+        justify-content: center;
+    }
+    .buton-cotiza button {
+        background-color: #fe8d00;
+        margin-top: 30px;
+        width: 16rem;
+        height: 4rem;
+        border-radius: 16px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 45px;
+    }
+    .buton-cotiza button:hover{
+        background-color: #FC4F00;
+    }
+    @media (max-width: 900px){
+      .contenido-cajas{
+        margin-top: 75px;
+      }
+      .sub-titulo-solucion h1{
+        margin-top: 25px;
+      }
+      .icons-items.items-rsp{
+        gap: .1rem;
+        right: .5rem;
+      }
+    }
+    @media(max-width: 425px){
+      .icons-items.items-rsp{
+        gap: .1rem;
+        right: .5rem;
+      }
+      .iconos-dimensiones{
+        width: 50px;
+        height: 50px;
+      }
+      .iconos-dimensiones img{
+        padding: 4px;
+      }
+      .titulo-soluciones{
+        color: #fff;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+      }
+      .contenido-cajas{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 10px;
+      }
+    }
+</style>

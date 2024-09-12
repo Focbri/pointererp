@@ -1,0 +1,8 @@
+---
+const { src, width, alt } = Astro.props;
+import { Image } from "astro:assets";
+---
+
+<li class="relative group flex justify-center items-center m-4">
+  <Image src={src} width={width} alt={alt} />
+</li>

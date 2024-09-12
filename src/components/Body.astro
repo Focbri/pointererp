@@ -1,0 +1,348 @@
+---
+import emprendedor from "@assets/images/SEMPRENDEDOR.png";
+import profesional from "@assets/images/SPROFESIONAL.png";
+import corporativo from "@assets/images/SCORPORATIVO.png";
+import BannerReact from "@components/TsParticles/bannerReact";
+---
+
+<div class="banner-padre relative">
+  <h2 class="z-30">IMPLEMENTACIÓN <span>GRATIS</span></h2>
+  <div class="absolute z-10 inset-0 h-28"><BannerReact client:only="react" /></div>
+</div>
+<div class="gestiones-padre posicion-relativa posicion-relativa2">
+  <!---Primer bloque------>
+  <div class="ventas1-padre gestiones-bloques">
+    <div class="relative">
+      <img
+        src={emprendedor.src}
+        alt="gestion de ventas"
+        class="gestion-ventas gestion"
+      /><!--btn md:btn-sm lg:btn-lg btn-warning font-bold text-white -->
+      <div class="soluciones-btn absolute -bottom-8 z-30 left-1/2 transform -translate-x-1/2 btns-w98">
+        <a href="/solucion/soluciones#emprendedor-section"><button
+          class="btn w-full  md:btn-sm btn-primary lg:btn-lg text-white"
+          >SOLUCIÓN <br />EMPRENDEDOR</button></a>
+      </div>
+    </div>
+    <div class="lista-parrafo">
+      <div class="flex flex-col">
+        <ul class="flex-1">
+          <li>Gestión <span>Ventas e <br />inventarios</span></li>
+          <li>Gestión de <span>Compras <br />y Logística</span></li>
+        </ul>
+        <div class="flex justify-center mb-4">
+          <div class="grid grid-cols-2 gap-1">
+            <div class="profesional ico1 cajas-ico-dim"></div>
+            <div class="profesional ico2 cajas-ico-dim"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col items-center my-4 gap-4">
+      <a href="/solucion/soluciones#emprendedor-section"
+        ><button class="btn btn-primary btn-lg">MÁS INFO</button></a
+      >
+      <a href="/nosotros/contactenos"
+        ><button class="btn-PruebaG btn btn-warning text-white btn-wide btn-lg"
+          >PRUEBA GRATUITA</button
+        ></a
+      >
+    </div>
+  </div>
+  <!---Segundo bloque--- -->
+  <div class="ventas2-padre gestiones-bloques">
+    <div class="relative">
+      <img
+        src={profesional.src}
+        alt="gestion de ventas2"
+        class="gestion-ventas2 gestion"
+      />
+      <div class="soluciones-btn absolute -bottom-8 z-30 left-1/2 transform -translate-x-1/2 btns-w98">
+        <a href="/solucion/soluciones#profesional-section"><button
+          class="btn w-full  md:btn-sm btn-primary lg:btn-lg text-white"
+          >SOLUCIÓN <br />PROFESIONAL</button></a>
+      </div>
+    </div>
+    <div class="lista-parrafo">
+      <div class="flex flex-col">
+        <ul class="flex-1">
+          <li>Gestión <span>Ventas e <br />inventarios</span></li>
+          <li>Gestión de <span>Compras <br />y Logística</span></li>
+          <li>Gestión de <span>Tesorería</span></li>
+          <li>Gestión <span>Contable</span></li>
+        </ul>
+        <div class="flex justify-center mb-4">
+          <div class="grid grid-cols-2 gap-1">
+            <div class="profesional ico1 cajas-ico-dim"></div>
+            <div class="profesional ico2 cajas-ico-dim"></div>
+            <div class="profesional ico3 cajas-ico-dim"></div>
+            <div class="profesional ico4 cajas-ico-dim"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col items-center my-4 gap-4">
+      <a href="/solucion/soluciones#profesional-section"
+        ><button class="btn btn-primary btn-lg">MÁS INFO</button></a
+      >
+      <a href="/nosotros/contactenos"
+        ><button class="btn-PruebaG btn btn-warning text-white btn-wide btn-lg"
+          >PRUEBA GRATUITA</button
+        ></a
+      >
+    </div>
+  </div>
+  <!---Tercer bloque--- -->
+  <div class="ventas3-padre gestiones-bloques">
+    <div class="relative">
+      <img
+        src={corporativo.src}
+        alt="gestion de ventas3"
+        class="gestion-ventas3 gestion"
+      />
+      <div class="soluciones-btn absolute -bottom-8 z-30 left-1/2 transform -translate-x-1/2 btns-w98">
+        <a href="/solucion/soluciones#corporativo-section">
+          <button class="btn w-full  md:btn-sm btn-primary lg:btn-lg text-white">SOLUCIÓN <br />CORPORATIVO</button>
+        </a>
+      </div>
+    </div>
+    <div class="lista-parrafo relative">
+      <div class="flex flex-col">
+        <ul class="flex-1">
+          <li>Gestión <span>Ventas e <br />inventarios</span></li>
+          <li>Gestión de <span>Compras <br />y Logística</span></li>
+          <li>Gestión de <span>Tesorería</span></li>
+          <li>Gestión <span>Contable</span></li>
+          <li>Gestión de <span>Producción</span></li>
+          <li>Gestión de <span>Recursos <br />humanos</span></li>
+          <li>Gestión de <span>Proyectos</span></li>
+        </ul>
+        <div class="flex justify-center mb-4">
+          <div class="flex flex-wrap gap-1 w-14">
+            <div class="corporativo ico1 cajas-ico-dim"></div>
+            <div class="corporativo ico2 cajas-ico-dim"></div>
+            <div class="corporativo ico3 cajas-ico-dim"></div>
+            <div class="corporativo ico4 cajas-ico-dim"></div>
+            <div class="corporativo ico5 cajas-ico-dim"></div>
+            <div class="corporativo ico6 cajas-ico-dim"></div>
+            <div class="corporativo ico7 cajas-ico-dim"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col items-center my-4 gap-4">
+      <a href="/solucion/soluciones#corporativo-section"
+        ><button class="btn btn-primary btn-lg">MÁS INFO</button></a
+      >
+      <a href="/nosotros/contactenos"
+        ><button class="btn-PruebaG btn btn-warning text-white btn-wide btn-lg"
+          >PRUEBA GRATUITA</button
+        ></a
+      >
+    </div>
+  </div>
+</div>
+<style>
+  @media (min-width: 640px) {
+    .btn-mobile-emprendedor {
+      background-color: #f00;
+      bottom: 8vw;
+    }
+    .posicion-relativa2 {
+      position: relative;
+    }
+  }
+  .boton-Semprendedor{
+    color: #fff;
+    font-weight: bold;
+  }
+  .caja-padre-ico {
+    display: flex;
+    gap: 4px;
+  }
+  .cajas-ico-dim {
+    height: 15px;
+    width: 15px;
+    border-radius: 10px;
+  }
+  .emprendedor-ico-padre {
+    position: absolute;
+    left: 22rem;
+    bottom: 41rem;
+  }
+  .ico1 {
+    background-color: #00abe1;
+  }
+  .ico2 {
+    background-color: #633c8f;
+  }
+  .profesional-ico-padre {
+    position: absolute;
+    left: 40rem;
+    bottom: 41rem;
+    width: 34px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ico3 {
+    background-color: #f8aa12;
+  }
+  .ico4 {
+    background-color: #5baa2d;
+  }
+  .corporativo.ico7 {
+    margin: auto;
+  }
+  .ico5 {
+    background-color: #005796;
+  }
+  .ico6 {
+    background-color: #e94290;
+  }
+  .ico7 {
+    background-color: #fe8d00;
+  }
+  .btn-solucion.btn-absoluto-rsp1 {
+    left: 10rem;
+  }
+  .btn-solucion.btn-absoluto-rsp2 {
+    left: 20rem;
+  }
+  .btn-solucion.btn-absoluto-rsp3 {
+    left: 30rem;
+  }
+  .btn-PruebaG:hover{
+    background-color: #FC4F00;
+  }
+  /*------------------------------Banner-----------------------*/
+  .banner-padre {
+    background-color: #1d6998;
+    text-align: center;
+    padding: 25px;
+    font-size: 32px;
+    margin-top: 30px;
+  }
+  .banner-padre h2 {
+    color: #fff;
+  }
+  .banner-padre span {
+    font-weight: bold;
+    text-shadow: -4px 5px 9px rgba(0, 0, 0, 0.99);
+    font-size: 38px;
+  }
+  /*------------------------------Gestiones-----------------------*/
+  .gestiones-padre {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .gestion {
+    width: 295px;
+    height: 325px;
+    border-radius: 8px 8px 0 0;
+  }
+  .gestiones-bloques span {
+    font-weight: bold;
+  }
+  .lista-parrafo {
+    display: flex;
+    justify-content: center;
+    padding-top: 55px;
+    background-color: #e5e6e9;
+    height: 450px;
+    color: #000;
+    border-radius: 0 0 8px 8px;
+  }
+  .lista-parrafo ul {
+    list-style-type: disc;
+  }
+  /*------------------------------Botones-----------------------*/
+  .btn-planes-padre {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    gap: 60px;
+  }
+  .btn-planes-hijo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12px;
+  }
+  .mas-info {
+    width: 9rem;
+    height: 4rem;
+    background-color: #1d6998;
+    border-radius: 16px;
+    color: #fff;
+    font-weight: bold;
+  }
+  .prueba-gratuita {
+    margin-top: 12px;
+    width: 16rem;
+    height: 4rem;
+    background-color: #fe8d00;
+    border-radius: 16px;
+    color: #fff;
+    font-weight: bold;
+  }
+  .posicion-relativa {
+    position: relative;
+  }
+  .btn-solucion {
+    background-color: #1d6998;
+    width: 16rem;
+    height: 4rem;
+    border-radius: 16px;
+    font-weight: bold;
+    cursor: default;
+  }
+  .btn-soluion-padre {
+    display: flex;
+    justify-content: center;
+  }
+  .btn-absoluto1 {
+    position: absolute;
+    bottom: 65rem;
+    left: 5rem;
+    color: #fff;
+  }
+  .btn-absoluto2 {
+    position: absolute;
+    bottom: 65rem;
+    left: 24rem;
+    color: #fff;
+  }
+  .btn-absoluto3 {
+    position: absolute;
+    bottom: 65rem;
+    left: 53rem;
+    color: #fff;
+  }
+  .btns-w98 {
+    width: 80%;
+  }
+  /*------------------------Responsive para moviles-----------------*/
+  @media (max-width: 425px) {
+    .gestiones-padre {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+    .btn-planes-hijo {
+      margin-top: 6px;
+    }
+  }
+  @media (max-width: 900px) {
+    .gestiones-padre {
+      gap: 2px;
+    }
+    .soluciones-btn button{
+      height: 45px;
+      margin-bottom: 10px;
+    }
+  }
+</style>

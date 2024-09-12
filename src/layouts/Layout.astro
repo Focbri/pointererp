@@ -1,0 +1,111 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { ViewTransitions } from "astro:transitions";
+
+interface Props {
+  title: string;
+  wrap?: string;
+  scrollable?: string;
+}
+
+const { title, wrap, scrollable } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <ViewTransitions />
+
+   <!-- Google tag (gtag.js) -->
+<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-X5YLXH7SVL"></script>
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X5YLXH7SVL');
+</script>
+
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-WZB62ZML"
+      height="0"
+      width="0"
+      style="display:none;visibility:hidden"
+    >
+    </iframe>
+  </noscript>
+<!-- End Google Tag Manager (noscript) -->
+  
+    <div style={scrollable}>
+      <div class={wrap}>
+        <div style="scroll-snap-align: start;">
+          <Header />
+        </div>
+        <slot name="after-header" />
+      </div>
+      <slot />
+      <div style="scroll-snap-align: end;">
+        <Footer />
+      </div>
+    </div>
+    <style is:global>
+
+      @font-face {
+        font-family: "Muller";
+        src: url("/fonts/MULLERREGULAR.TTF") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Muller";
+        src: url("/fonts/MULLERREGULARITALIC.TTF") format("truetype");
+        font-weight: normal;
+        font-style: italic;
+      }
+      @font-face {
+        font-family: "Muller";
+        src: url("/fonts/MULLERBOLD.TTF") format("truetype");
+        font-weight: bold;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Muller";
+        src: url("/fonts/MULLERBOLDITALIC.TTF") format("truetype");
+        font-weight: bold;
+        font-style: italic;
+      }
+      @font-face {
+        font-family: "Muller";
+        src: url("/fonts/MULLERBLACK.TTF") format("truetype");
+        font-weight: 900;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Muller";
+        src: url("/fonts/MULLERBLACKITALIC.TTF") format("truetype");
+        font-weight: 900;
+        font-style: italic;
+      }
+      @font-face {
+        font-family: "Muller";
+        src: url("/fonts/MULLEREXTRABOLD.TTF") format("truetype");
+        font-weight: 800;
+        font-style: normal;
+      }
+      body {
+        font-family: "Muller", cursive; /* Use your custom font as the primary choice and fallback to a sans-serif font */
+      }
+    </style>
+  </body>
+</html>
